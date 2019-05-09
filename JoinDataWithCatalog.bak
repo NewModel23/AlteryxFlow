@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:RGUERREOP-PC\SQLEXPRESS|||Select TestCat.dbo.CatalogoServicios.IdServicio As IdServicio1, TestCat.dbo.CatalogoServicios.Descripcion As Descripcion1, TestCat.dbo.CatalogoServicios.TiempoEstimado As TiempoEstimado1 From TestCat.dbo.CatalogoServicios</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:RGUERREOP-PC\SQLEXPRESS
+Table=Select TestCat.dbo.CatalogoServicios.IdServicio As IdServicio1, TestCat.dbo.CatalogoServicios.Descripcion As Descripcion1, TestCat.dbo.CatalogoServicios.TiempoEstimado As TiempoEstimado1 From TestCat.dbo.CatalogoServicios</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IdServicio1" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select TestCat.dbo.CatalogoServicios.IdServicio As IdServicio1, TestCat.dbo.CatalogoServicios.Descripcion As Descripcion1, TestCat.dbo.CatalogoServicios.TiempoEstimado As TiempoEstimado1 From TestCat.dbo.CatalogoServicios" type="Int32" />
+            <Field name="Descripcion1" size="50" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select TestCat.dbo.CatalogoServicios.IdServicio As IdServicio1, TestCat.dbo.CatalogoServicios.Descripcion As Descripcion1, TestCat.dbo.CatalogoServicios.TiempoEstimado As TiempoEstimado1 From TestCat.dbo.CatalogoServicios" type="V_WString" />
+            <Field name="TiempoEstimado1" size="50" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select TestCat.dbo.CatalogoServicios.IdServicio As IdServicio1, TestCat.dbo.CatalogoServicios.Descripcion As Descripcion1, TestCat.dbo.CatalogoServicios.TiempoEstimado As TiempoEstimado1 From TestCat.dbo.CatalogoServicios" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:RGUERREOP-PC\SQLEXPRESS|||Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <ReadUncommitted>False</ReadUncommitted>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:RGUERREOP-PC\SQLEXPRESS
+Table=Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="tienda" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP" type="Double" />
+            <Field name="orden" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP" type="Double" />
+            <Field name="TipoServicio" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP" type="Double" />
+            <Field name="fecha" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP" type="DateTime" />
+            <Field name="status" source="File: aka:RGUERREOP-PC\SQLEXPRESS|||Select CargasFTP.tienda, CargasFTP.orden, CargasFTP.TipoServicio, CargasFTP.fecha, CargasFTP.status From CargasFTP" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="174" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="TipoServicio" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="IdServicio1" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_tienda" selected="True" input="Left_" />
+                <SelectField field="Left_orden" selected="True" input="Left_" />
+                <SelectField field="Left_TipoServicio" selected="True" input="Left_" type="Int32" size="4" />
+                <SelectField field="Left_fecha" selected="True" input="Left_" />
+                <SelectField field="Left_hora" selected="True" input="Left_" type="Time" size="8" />
+                <SelectField field="Left_status" selected="True" input="Left_" />
+                <SelectField field="Right_IdServicio1" selected="True" input="Right_" />
+                <SelectField field="Right_Descripcion1" selected="True" input="Right_" />
+                <SelectField field="Right_TiempoEstimado1" selected="True" input="Right_" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="270" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="abs(DateTimeDiff([fecha],DateTimeNow(),&quot;Minutes&quot;))" field="Minutos" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Minutos = abs(DateTimeDiff([fecha],DateTimeNow(),"Minutes"))
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rguerrerop\AppData\Local\Temp\Engine_25480_ac258d24cd0343639eed29cccd77e046_\Engine_23096_6cd1e7682ce64218b751ada1f4cd8431_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="  IIF([Minutos]&gt;[TiempoEstimado1], &quot;Alerta&quot;, &quot;En proceso&quot;)" field="StatusOrden" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[StatusOrden =   IIF([Minutos]>[TiempoEstimado1], "Alerta", "En proceso")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rguerrerop\AppData\Local\Temp\Engine_25480_ac258d24cd0343639eed29cccd77e046_\Engine_23096_8d25fb1db361473aa69729cefefc47ea_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>JoinDataWithCatalog</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
